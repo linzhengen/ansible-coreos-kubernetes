@@ -2,14 +2,14 @@
 localhost
 
 [k8s-masters]
-core01.myfqdn.com pub_ip=222.2.1.199 priv_ip=172.17.8.101
-core02.myfqdn.com pub_ip=222.2.1.198 priv_ip=172.17.8.102
-core03.myfqdn.com pub_ip=222.2.1.197 priv_ip=172.17.8.103
+core01.myfqdn.com pub_ip=192.168.100.10 priv_ip=192.168.200.101
+core02.myfqdn.com pub_ip=192.168.100.11 priv_ip=192.168.200.102
+core03.myfqdn.com pub_ip=192.168.100.12 priv_ip=192.168.200.103
 
 [k8s-workers]
-core04.myfqdn.com pub_ip=222.2.1.196 priv_ip=172.17.8.104
-core05.myfqdn.com pub_ip=222.2.1.195 priv_ip=172.17.8.105
-core06.myfqdn.com pub_ip=222.2.1.194 priv_ip=172.17.8.106
+core04.myfqdn.com pub_ip=192.168.100.13 priv_ip=192.168.200.104
+core05.myfqdn.com pub_ip=192.168.100.14 priv_ip=192.168.200.105
+core06.myfqdn.com pub_ip=192.168.100.15 priv_ip=192.168.200.106
 
 [k8s-nodes:children]
 k8s-masters

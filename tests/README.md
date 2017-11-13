@@ -21,5 +21,6 @@ Install Kubernetes
 To install kubernetes, there is a playbook example that you can easily run this way:
 
 ```
-ansible-playbook -i roles/deimosfr.coreos-kubernetes/tests/hosts roles/deimosfr.coreos-kubernetes/tests/playbook_coreos_kubernetes.yml -D -e k8s_role_path="{{playbook_dir}}/.." 
+cd tests
+ansible-playbook -i hosts playbook_coreos_kubernetes.yml -D -e k8s_role_path="{{playbook_dir}}/.." 
 ```
